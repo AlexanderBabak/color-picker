@@ -7,12 +7,14 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "rc": "react-native start --reset-cache"
   },
   "dependencies": {
     "react": "18.2.0",
     "react-native": "0.71.7",
     "react-native-gesture-handler": "^2.9.0",
+    "react-native-linear-gradient": "^2.6.2",
     "react-native-reanimated": "^3.1.0"
   },
   "devDependencies": {
