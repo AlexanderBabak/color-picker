@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react';
-import { Dimensions, StyleSheet, View } from 'react-native';
+import { Dimensions, StyleSheet, Text, View } from 'react-native';
 import { ColorPicker } from './src/components/ColorPicker';
 import Animated, { useAnimatedStyle, useSharedValue } from 'react-native-reanimated';
 
@@ -27,6 +27,7 @@ function App() {
     <>
       <View style={styles.topContainer}>
         <Animated.View style={[styles.circle, rStyle]} />
+        <Text style={styles.text}>Choose your color</Text>
       </View>
       <View style={styles.bottomContainer}>
         <ColorPicker
@@ -60,6 +61,15 @@ const styles = StyleSheet.create({
     width: CIRCLE_SIZE,
     height: CIRCLE_SIZE,
     borderRadius: CIRCLE_SIZE / 2,
+  },
+  text: {
+    fontSize: 25,
+    textTransform: 'uppercase',
+    fontWeight: '700',
+    position: 'absolute',
+    bottom: 0,
+    marginBottom: 20,
+    color: 'grey',
   },
 });
 
